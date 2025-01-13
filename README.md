@@ -11,7 +11,7 @@ spring.autoconfigure.exclude=org.springframework.boot.autoconfigure.jdbc.DataSou
     <interactiveMode>true</interactiveMode>
     <offline>false</offline>
 
-    <mirrors>
+    < mirrors>
         <mirror>
             <id>central</id>
             <mirrorOf>central</mirrorOf>
@@ -19,7 +19,7 @@ spring.autoconfigure.exclude=org.springframework.boot.autoconfigure.jdbc.DataSou
         </mirror>
     </mirrors>
 
-    <proxies>
+    < proxies>
         <!-- Configura esto si estás detrás de un proxy -->
         <!--
         <proxy>
@@ -31,7 +31,7 @@ spring.autoconfigure.exclude=org.springframework.boot.autoconfigure.jdbc.DataSou
             <username>usuario</username>
             <password>contraseña</password>
             <nonProxyHosts>www.google.com|*.example.com</nonProxyHosts>
-        </proxy>
+        </proxy >
         -->
     </proxies>
 </setting s>
@@ -43,6 +43,25 @@ pass for Supabase
 
  Db: ju66ErnauT0verwhelming7orce
 
+
+
+-----aplication properties
+spring.application.name=adoption-pets-api
+
+#Configuracion de la Base de Datos
+spring.datasource.url=jdbc:postgresql://aws-0-us-west-1.pooler.supabase.com:5432/postgres
+spring.datasource.username=postgres.liliwvitbtpcmjesirpw
+spring.datasource.password=${PG_SUPABASE_PASSWORD}
+spring.datasource.driver-class-name=org.postgresql.Driver
+
+# Configuracion de JPA
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.format_sql=true
+
+logging.level.org.hibernate.SQL=DEBUG
+logging.level.org.hibernate.type.descriptor.sql=TRACE
 
 
 
