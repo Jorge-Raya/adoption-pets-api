@@ -39,6 +39,10 @@ spring.autoconfigure.exclude=org.springframework.boot.autoconfigure.jdbc.DataSou
 command to avoid the DB setup
 * spring.autoconfigure.exclude=org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
 
+pass for Supabase
+
+ Db: ju66ErnauT0verwhelming7orce
+
 
 
 
