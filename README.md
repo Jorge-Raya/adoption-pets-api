@@ -36,5 +36,9 @@ spring.autoconfigure.exclude=org.springframework.boot.autoconfigure.jdbc.DataSou
     </proxies>
 </setting s>
 
+command to avoid the DB setup
+* spring.autoconfigure.exclude=org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+
+
 
 
